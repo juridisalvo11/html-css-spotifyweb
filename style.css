@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+aside {
+    width: 200px;
+    height: calc(100vh - 80px);
+    background-color: blue;
+    float: left;
+}
+
+main {
+    width: calc(100% - 200px);
+    height: calc(100vh - 80px);
+    background: linear-gradient(to bottom, #33ccff 0%, #006600 100%);
+    float: left;
+    overflow: auto;
+}
+
+.menu-music {
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.menu-music ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu-music li {
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 25px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.menu-music a {
+    text-decoration: none;
+    color: white;
+}
+
+.box-music {
+    margin-top: 50px;
+}
+
+.box-music h1, .songs p:first-child {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.album {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.artist {
+    max-height: 150px;
+    max-width: 150px;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.songs p {
+    max-width: 150px;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+
+.songs p:first-child {
+    cursor: pointer;
+}
+
+.artist img {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: darkslategrey;
+    float: left;
+}
+
+@media (max-width: 992px) {
+    .menu-music {
+        padding-top: 12px;
+    }
+
+    .hamburger-menu {
+        color: white;
+        display: block;
+        margin-left: 10px;
+    }
+
+    .menu-music ul {
+        display: none;
+    }
+}
