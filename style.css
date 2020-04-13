@@ -229,6 +229,7 @@ footer {
 
 .player ul {
     list-style-type: none;
+    width: 90%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -238,7 +239,7 @@ footer {
 }
 
 .slider {
-    width: 90%;
+    width: 80%;
     height: 3px;
     background-color: rgba(255, 255, 255, 0.7);
     -webkit-appearance:none;
@@ -417,7 +418,7 @@ footer {
     h1 {
         text-align: center;
     }
-
+    
     .slider {
         width: 82%;
     }
