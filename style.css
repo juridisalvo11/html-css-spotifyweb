@@ -25,6 +25,7 @@ aside {
     color: rgba(255, 255, 255, 0.7);
     background-color: black;
     float: left;
+    position: relative;
 }
 
 .mobile-icon {
@@ -69,10 +70,16 @@ aside {
     text-transform: capitalize;
 }
 
+.download {
+    width: 90%;
+    position: absolute;
+    bottom: 10px;
+}
+
 .app {
     border-bottom: 1px solid white;
-    margin-top: 220px;
     padding-bottom: 5px;
+    cursor: pointer;
 }
 
 .user {
@@ -171,7 +178,6 @@ main {
     text-transform: capitalize;
     font-size: 12px;
 }
-
 
 .songs p:first-child {
     cursor: pointer;
@@ -336,50 +342,6 @@ footer {
 
 }
 
-/* @media (max-width: 768px) {
-    aside {
-        width: 60px;
-        text-align: center;
-    }
-
-    .mobile-icon {
-        display: block;
-        margin-bottom: 25px;
-        margin-top: 18px;
-    }
-
-    main {
-        width: calc(100% - 60px);
-    }
-
-    .album {
-        justify-content: flex-start;
-        margin-left: 35px;
-}
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    .app {
-        border-bottom: 0;
-    }
-
-    .app span {
-        border-bottom: 1px solid white;
-    }
-
-    .top-list a, .bottom-list, .download span, .spotify-icon img {
-        display: none;
-    }
-
-    .download {
-        margin-top: 330px;
-    }
-
-} */
-
 @media all and (min-width: 768px) and (max-width: 992px) {
 
     .menu-aside {
@@ -418,10 +380,8 @@ footer {
     h1 {
         text-align: center;
     }
-    
+
     .slider {
         width: 82%;
     }
-
-
 }
